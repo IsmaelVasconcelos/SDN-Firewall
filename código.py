@@ -1,8 +1,12 @@
+# coding=utf-8
 import json
 import requests
 import http.client
 import urllib.parse
 
+
+# Essa primeira função armazenara todas as urls que serão utilizadas para fazer as
+# requisições deste iniciar o switche a deleta as regras. Ela ira retornar un dicionário com todas a urls.
 def urls ():
     url = {}
     url ["url_rules"] = 'http://localhost:8080/firewall/rules/0000000000000001'
@@ -14,6 +18,8 @@ def urls ():
     url ["url_changing_log"] = "/firewall/log/enable/0000000000000001"
 
     return url
+
+# Essa função ira passar os parâmetros que serão utilizados para criar as regras no firewall.
 
 def parametros_firewall ():
     newConditions = {}
