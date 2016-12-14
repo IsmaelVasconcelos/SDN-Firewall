@@ -1,4 +1,4 @@
-import codigo_funcional
+import código_funcional
 id_s = input("Digite o id do switche: ")
 nw_src = input("Digite o ip de Origem: ")
 nw_dst = input("Digite o ip de Destino: ")
